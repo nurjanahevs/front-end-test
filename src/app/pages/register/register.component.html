@@ -1,0 +1,19 @@
+<h1>REGISTER PAGE</h1>
+
+<form [formGroup]="profileForm" (ngSubmit)="onRegister()">
+
+  <label for="name">Name: </label>
+  <input name="name" id="name" type="text" formControlName="name" required>
+
+  <label for="hp">Hp: </label>
+  <input id="hp" type="text" formControlName="hp" required>
+
+  <label for="email">Email: </label>
+  <input id="email" type="email" formControlName="email" required>
+
+  <label for="password">Password: </label>
+  <input id="password" type="password" formControlName="password" required>
+
+</form>
+
+<button (click)="onRegister()" type="submit" [disabled]="!profileForm.valid">Submit</button>

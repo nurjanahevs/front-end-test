@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // baseUrl : 'mongodb://nurjanahevs:nurjanahevs@<hostname>/datatest?ssl=true&replicaSet=atlas-hc0xp4-shard-0&authSource=admin&retryWrites=true&w=majority'
+  baseUrl: "http://localhost:5000"
+  
 };
 
 /*
